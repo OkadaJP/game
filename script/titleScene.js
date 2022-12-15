@@ -19,19 +19,19 @@ function createTitleScene(){
         scene.append(new g.Sprite({
             scene: scene,
             src: scene.asset.getImageById("title"),
-            x: 128, y: 112
+            x: 300, y: 112
         }));
         var startButton = new g.Sprite({
             scene: scene,
             src: scene.asset.getImageById("start"),
-            x: 360, y: 420,
+            x: 550, y: 420,
             touchable: true
         });
         scene.append(startButton);
         scene.append(new g.Sprite({
             scene: scene,
             src: scene.asset.getImageById("author"),
-            x: 720, y: 650
+            x: 1020, y: 650
         }));
         startButton.pointDown.add(()=>{
             g.game.replaceScene(createExplain());

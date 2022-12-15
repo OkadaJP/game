@@ -26,7 +26,7 @@
 		"background": {
 			"type": "image",
 			"path": "image/background.jpg",
-			"width": 960,
+			"width": 1280,
 			"height": 720
 		},
 		"title": {
