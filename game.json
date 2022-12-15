@@ -1,0 +1,88 @@
+{
+	"width": 1280,
+	"height": 720,
+	"fps": 30,
+	"title": "がんばれ!!鈴木さん",
+	"description": "鈴木さんが出社を目指して飛んでいくミニゲームです。",
+	"main": "./script/main.js",
+	"assets": {
+		"yuusya": {
+			"type": "image",
+			"width": 30,
+			"height": 32,
+			"path": "image/yuusya.png"
+		},
+		"main": {
+			"type": "script",
+			"path": "script/main.js",
+			"global": true
+		},
+		"op": {
+			"type": "audio",
+			"path": "audio/op",
+			"systemId": "music",
+			"duration": 71763
+		},
+		"background": {
+			"type": "image",
+			"path": "image/background.jpg",
+			"width": 960,
+			"height": 720
+		},
+		"title": {
+			"type": "image",
+			"path": "image/title.png",
+			"width": 711,
+			"height": 112
+		},
+		"start": {
+			"type": "image",
+			"path": "image/start.png",
+			"width": 239,
+			"height": 90
+		},
+		"titleScene": {
+			"type": "script",
+			"path": "script/titleScene.js",
+			"global": true
+		},
+		"author": {
+			"type": "image",
+			"path": "image/author.png",
+			"width": 213,
+			"height": 36
+		},
+		"startLogo": {
+			"type": "image",
+			"path": "image/startLogo.png",
+			"width": 170,
+			"height": 64
+		},
+		"firstPage": {
+			"type": "script",
+			"path": "script/firstPage.js",
+			"global": true
+		},
+		"se1": {
+			"type": "audio",
+			"path": "audio/se1",
+			"systemId": "sound",
+			"duration": 1014
+		},
+		"explanation1": {
+			"type": "image",
+			"path": "image/explanation1.png",
+			"width": 960,
+			"height": 720
+		},
+		"explanationScene": {
+			"type": "script",
+			"path": "script/explanationScene.js",
+			"global": true
+		}
+	},
+	"moduleMainScripts": {},
+	"environment": {
+		"sandbox-runtime": "3"
+	}
+}
