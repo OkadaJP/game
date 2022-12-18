@@ -2,13 +2,13 @@
     タイトルページのUIを生成する
 */
 
-const createExplain = require("./explanationScene");
+const createGameScene = require("./gameScene");
 
 function createTitleScene(){
     // ゲームの情報を参照する定数
     const scene = new g.Scene({
         game: g.game,
-        assetIds: ["background","op","title","start","author","explanation1"]
+        assetIds: ["background","op","title","start","author"]
     });
     // 初期表示処理
     scene.onLoad.add(()=>{
@@ -34,9 +34,9 @@ function createTitleScene(){
             x: 1020, y: 650
         }));
         startButton.pointDown.add(()=>{
-            g.game.replaceScene(createExplain());
+            g.game.replaceScene(createGameScene());
         });
-        scene.asset.getAudioById("op").play();
+        // scene.asset.getAudioById("op").play();
     });
     return scene;
 }

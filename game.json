@@ -69,20 +69,26 @@
 			"systemId": "sound",
 			"duration": 1014
 		},
-		"explanation1": {
-			"type": "image",
-			"path": "image/explanation1.png",
-			"width": 960,
-			"height": 720
-		},
-		"explanationScene": {
+		"gameScene": {
 			"type": "script",
-			"path": "script/explanationScene.js",
+			"path": "script/gameScene.js",
 			"global": true
+		},
+		"map": {
+			"type": "image",
+			"path": "image/map.png",
+			"width": 512,
+			"height": 512
 		}
 	},
-	"moduleMainScripts": {},
+	"moduleMainScripts": {
+		"@akashic-extension/akashic-tile": "node_modules/@akashic-extension/akashic-tile/lib/index.js"
+	},
 	"environment": {
 		"sandbox-runtime": "3"
-	}
+	},
+	"globalScripts": [
+		"node_modules/@akashic-extension/akashic-tile/lib/Tile.js",
+		"node_modules/@akashic-extension/akashic-tile/lib/index.js"
+	]
 }
