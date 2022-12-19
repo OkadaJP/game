@@ -8,8 +8,8 @@
 	"assets": {
 		"yuusya": {
 			"type": "image",
-			"width": 30,
-			"height": 32,
+			"width": 64,
+			"height": 79,
 			"path": "image/yuusya.png"
 		},
 		"main": {
@@ -79,16 +79,29 @@
 			"path": "image/map.png",
 			"width": 512,
 			"height": 512
+		},
+		"yajirusi": {
+			"type": "image",
+			"path": "image/yajirusi.png",
+			"width": 500,
+			"height": 500
 		}
 	},
 	"moduleMainScripts": {
-		"@akashic-extension/akashic-tile": "node_modules/@akashic-extension/akashic-tile/lib/index.js"
+		"@akashic-extension/akashic-tile": "node_modules/@akashic-extension/akashic-tile/lib/index.js",
+		"@akashic-extension/akashic-box2d": "node_modules/@akashic-extension/akashic-box2d/lib/index.js",
+		"box2dweb": "node_modules/box2dweb/box2d.js"
 	},
 	"environment": {
 		"sandbox-runtime": "3"
 	},
 	"globalScripts": [
 		"node_modules/@akashic-extension/akashic-tile/lib/Tile.js",
-		"node_modules/@akashic-extension/akashic-tile/lib/index.js"
+		"node_modules/@akashic-extension/akashic-tile/lib/index.js",
+		"node_modules/@akashic-extension/akashic-box2d/lib/Box2D.js",
+		"node_modules/@akashic-extension/akashic-box2d/lib/ContactManager.js",
+		"node_modules/@akashic-extension/akashic-box2d/lib/index.js",
+		"node_modules/@akashic-extension/akashic-box2d/lib/parameters.js",
+		"node_modules/box2dweb/box2d.js"
 	]
 }
